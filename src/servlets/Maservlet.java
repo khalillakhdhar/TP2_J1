@@ -1,6 +1,8 @@
 package servlets;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -40,7 +42,13 @@ public class Maservlet extends HttpServlet {
 		//String x=request.getParameter("v1"); int a=IntegerparseInt(x)
 		int b=Integer.parseInt(request.getParameter("v2"));
 		Math m=new Math(a, b);
-
+		PrintWriter out=response.getWriter();
+		out.print(m.toString());
+		
+		
+		//envoie par dispatcher
+request.setAttribute("resultat", m.toString()); //affecte la méthode toString() à une variable resultat
+request.getRequestDispatcher("affiche.jsp").forward(request, response);
 	}
 
 }

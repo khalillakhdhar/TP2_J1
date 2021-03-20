@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="Maservlet" method="post">
-valeur 1: <input name="v1" type="number" min="1">
- valeur 2: <input name="v2"  type="number" min="1">
- <input type="submit" value="calculer">
-</form>
+<h3>
+
+le resultat est: <%= request.getAttribute("resultat") %> 
+</h3>
 </body>
 </html>
