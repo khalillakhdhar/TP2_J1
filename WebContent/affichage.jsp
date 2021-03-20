@@ -11,5 +11,6 @@
 
 le resultat est: <%= request.getAttribute("resultat") %> 
 </h3>
+<a href="index.jsp">Nouveau calcule</a>
 </body>
 </html>
