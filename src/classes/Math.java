@@ -42,5 +42,14 @@ else
 	return b;
 }
 
+@Override
+public String toString() {
+	return "Math [a=" + a + ", b=" + b + ", somme=" + somme() + ", produit=" + produit() + ", max=" + max() + "]";
+}
+
+
+
+
+
 }
 
