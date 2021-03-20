@@ -48,7 +48,7 @@ public class Maservlet extends HttpServlet {
 		
 		//envoie par dispatcher
 request.setAttribute("resultat", m.toString()); //affecte la méthode toString() à une variable resultat
-request.getRequestDispatcher("affiche.jsp").forward(request, response);
+request.getRequestDispatcher("affichage.jsp").forward(request, response);
 	}
 
 }
