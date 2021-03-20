@@ -24,10 +24,23 @@ public class Math {
 		this.a = a;
 		this.b = b;
 	}
-	public int max()
+	public int somme()
 	{
 		
 		return a+b;
 	}
+public int produit()
+{
+return a*b;
 
 }
+public int max()
+{
+if(a>b)
+	return a;
+else 
+	return b;
+}
+
+}
+
