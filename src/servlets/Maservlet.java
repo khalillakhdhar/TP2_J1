@@ -6,7 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import classes.Math;
 /**
  * Servlet implementation class Maservlet
  */
@@ -36,7 +36,11 @@ public class Maservlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 	//	doGet(request, response);
-		
+		int a=Integer.parseInt(request.getParameter("v1"));
+		//String x=request.getParameter("v1"); int a=IntegerparseInt(x)
+		int b=Integer.parseInt(request.getParameter("v2"));
+		Math m=new Math(a, b);
+
 	}
 
 }

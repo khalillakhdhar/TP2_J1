@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form>
+<form action="Maservlet" method="post">
 valeur 1: <input name="v1" type="number" min="1">
  valeur 2: <input name="v2"  type="number" min="1">
 </form>
